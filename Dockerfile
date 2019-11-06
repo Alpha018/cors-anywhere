@@ -1,9 +1,11 @@
-FROM nginx
+FROM node:11.10.1-alpine
 
-COPY index.html /app/dist/
+WORKDIR /usr/src/app
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY ./* ./
 
-RUN rm /etc/nginx/conf.d/default.conf
+RUN npm install
 
-COPY nginx-cors.conf /etc/nginx/conf.d/nginx-cors.conf
+EXPOSE 8080
+
+CMD node cors.js

@@ -1,0 +1,22 @@
+{
+  "name": "nginx-cors",
+  "version": "1.0.0",
+  "description": "Configure Nginx server as a reverse proxy so that inject header `Access-Control-Allow-Origin: '*'` on all responses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyang274/nginx-cors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyang274/nginx-cors/issues"
+  },
+  "homepage": "https://github.com/gyang274/nginx-cors#readme",
+  "dependencies": {
+    "cors-anywhere": "^0.4.1"
+  }
+}
